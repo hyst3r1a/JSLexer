@@ -1,0 +1,22 @@
+ private int numberFA(char ch, Token token) throws IOException {
+        int nextCh = reader.read();
+        boolean isFloat = false;
+        if (ch == '0') {
+            if (nextCh == 'x') {
+                token.addChar((char) nextCh);
+                nextCh = reader.read();
+                while (Character.isDigit(nextCh) || (nextCh >= 97 && nextCh <= 102) || (nextCh >= 65 && nextCh <= 72)) {
+                    token.addChar((char) nextCh);
+                    nextCh = reader.read();
+                }
+            }
+1.23.56dvhjj
+a !!= 123;
+1asd
+0b333
+0999
+>>>=
+"n\"
+
+"
+
